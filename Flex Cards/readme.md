@@ -1,5 +1,5 @@
 $ CSS Exercises - 1
 
-flex and grid feature.
+some flex and grid features.
 
 https://codepen.io/uixcem/pen/LYBwREq
