@@ -1,0 +1,111 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: antiquewhite;
+    display: grid;
+    place-items: center;
+}
+
+
+.box {
+
+    display: grid;
+    place-items: center;
+    position: relative;
+    height: 450px;
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.box ::before {
+    content: '';
+    width: 120px;
+    height: 750px;
+    left: 100px;
+    top: -150px;
+    position: absolute;
+    background: linear-gradient(#ffef0f, #b400fb);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.box::after {
+    content: 'CSS Exercise #3 by Cem';
+
+    display: grid;
+    place-items: center;
+
+    position: absolute;
+    background-color: #ffffff;
+    inset: 10px;
+    border-radius: 10px;
+}
+
+
+.cemkaplan {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+
+.cem {
+    width: 100px;
+    height: 100px;
+}
+
+.cem :hover {
+    transform: translateY(5px);
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover {
+    background: none;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul {
+    position: absolute;
+    width: 100px;
+    display: none;
+}
+
+li {
+    padding: 10px;
+}
+
+.lg:hover {
+    transform: scale(1.2);
+}
+
+.lg {
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+}
