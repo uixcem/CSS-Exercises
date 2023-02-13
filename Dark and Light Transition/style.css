@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(68, 97, 140);
+    height: 100vh;
+}
+
+
+.container {
+    width: 300px;
+    height: 300px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: tomato;
+    border: 2px solid white;
+    ;
+}
+
+.togglebox {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 75px;
+    border-radius: 40px;
+    border: #353232 5px solid;
+    background-color: bisque;
+    position: relative;
+}
+
+.switch {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(60, 65, 65);
+    left: 5px;
+    position: relative;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+
+}
+
+.switch:active {
+
+    background-color: #fff;
+    transform: translatex(70px);
+    transition: all 1.5s ease-in-out;
+
+
+}
+
+
+.switch:before {
+    content: '🥸';
+    font-size: 40px;
+    text-align: center;
+}
+
+.togglebox:active {
+    background-color: rgb(60, 65, 65);
+    border-color: #fff;
+    transition: all 2.5s ease-out;
+
+}
+
+body .container:active {
+    background-color: #fff;
+    transition: all 1.5s ease;
+
+
+}
+
+.cemkaplan {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+
+.cem {
+    width: 100px;
+    height: 100px;
+}
+
+.cem :hover {
+    transform: translateY(5px);
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover {
+    background: none;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul {
+    position: absolute;
+    width: 100px;
+    display: none;
+}
+
+li {
+    padding: 10px;
+}
+
+.lg:hover {
+    transform: scale(1.2);
+}
+
+.lg {
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+}
