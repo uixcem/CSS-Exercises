@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: bisque;
+
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    gap: 20px;
+}
+
+
+input {
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 250px;
+
+}
+
+
+
+input:invalid {
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border: 3px solid red;
+    animation: invalid 0.1s 2;
+}
+
+
+
+@keyframes invalid {
+    %25 {
+        translate: 6px 3px;
+    }
+
+    %50 {
+        translate: -6px -3px;
+    }
+
+    75% {
+        translate: 6px 3px;
+    }
+
+    100% {
+        translate: -6px -3px;
+    }
+}
+
+.cemkaplan {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+
+.cem {
+    width: 100px;
+    height: 100px;
+}
+
+.cem :hover {
+    transform: translateY(5px);
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover {
+    background: none;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul {
+    position: absolute;
+    width: 100px;
+    display: none;
+}
+
+li {
+    padding: 10px;
+}
+
+.lg:hover {
+    transform: scale(1.2);
+}
+
+.lg {
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+}
