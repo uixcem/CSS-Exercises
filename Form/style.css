@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #fff6af;
+    display: grid;
+    place-items: center;
+
+
+}
+
+
+.main {
+    width: 1200px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    background-color: #FFA580;
+
+
+
+}
+
+
+.form {
+    width: 600px;
+    background-color: lemonchiffon;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    background-color: #f7cac9;
+    animation: color-change 5s ease infinite;
+}
+
+
+@keyframes color-change {
+    0% {
+        background-color: #f7cac9;
+    }
+
+    50% {
+        background-color: #92a8d1;
+    }
+
+    100% {
+        background-color: lemonchiffon;
+    }
+}
+
+button {
+    display: block;
+    width: 220px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: #ffa580;
+    letter-spacing: 2px;
+    transition: .2s all ease-in-out;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 1);
+    box-shadow: 3px 3px 1px 1px, 3px 3px 1px 2px rgba(0, 0, 0, 1)
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 1);
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+input {
+    display: block;
+    width: 300px;
+    font-size: 1rem;
+    line-height: 1.4rem * 2;
+    font-family: 'Inter';
+    margin-bottom: 10px;
+    border-bottom: 3px solid rgba(0, 0, 0, 1);
+    padding-left: 5px;
+    color: rgba(0, 0, 0, 1);
+}
+
+input:focus {
+    border-bottom: 5px solid #ffa580;
+    outline: none;
+}
+
+input[type=text], [type=email], [type=password] {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+}
+
+.cemkaplan {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+
+.cem {
+    width: 100px;
+    height: 100px;
+}
+
+.cem :hover {
+    transform: translateY(5px);
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover {
+    background: none;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul {
+    position: absolute;
+    width: 100px;
+    display: none;
+}
+
+li {
+    padding: 10px;
+}
+
+.lg:hover {
+    transform: scale(1.2);
+}
+
+.lg {
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+}
