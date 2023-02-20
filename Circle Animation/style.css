@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: tomato;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: aqua;
+
+}
+
+.ball {
+    position: absolute;
+    right: -7px;
+    font-size: 45px;
+    transform: rotate(90deg);
+    overflow: hidden;
+    top: 210px;
+    bottom: 0;
+    right: 0;
+    left: 215px;
+    animation: move 5s linear infinite;
+    -webkit-animation: move 5s linear infinite;
+    animation-direction: reverse;
+}
+
+.second {
+    animation: move 5s linear infinite;
+    -webkit-animation: move 5s linear infinite;
+    animation-direction: reverse;
+    animation-delay: 1s;
+
+}
+
+.third {
+    animation-delay: 2s;
+}
+
+
+.fourth {
+    animation-delay: 3s;
+}
+
+.fifth {
+    animation-delay: 4s;
+}
+
+.gif img {
+    width: 400px;
+    height: 400px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+@-webkit-keyframes move {
+    0% {
+        transform: rotate(0deg) translate(-220px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translate(-220px) rotate(-360deg);
+    }
+}
+
+.cemkaplan {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+
+.cem {
+    width: 100px;
+    height: 100px;
+}
+
+.cem :hover {
+    transform: translateY(5px);
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover {
+    background: none;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul {
+    position: absolute;
+    width: 100px;
+    display: none;
+}
+
+li {
+    padding: 10px;
+}
+
+.lg:hover {
+    transform: scale(1.2);
+}
+
+.lg {
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+}
