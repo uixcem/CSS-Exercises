@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background-color: dimgray;
+}
+
+
+.card {
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(tomato, orange, yellow);
+    transform: rotateY(-35deg) scale(0.7) rotateX(15deg);
+    filter: blur(1px);
+    opacity: 0.5;
+    transition: 2s ease all;
+}
+
+.card:hover {
+    transform: rotateY(25deg) scale(1) rotateX(15deg);
+    filter: blur(0px);
+    opacity: 1;
+    transition: 2s ease all;
+
+}
+
+
+
+.cemkaplan {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+
+.cem {
+    width: 100px;
+    height: 100px;
+}
+
+.cem :hover {
+    transform: translateY(5px);
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover {
+    background: none;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul {
+    position: absolute;
+    width: 100px;
+    display: none;
+}
+
+li {
+    padding: 10px;
+}
+
+.lg:hover {
+    transform: scale(1.2);
+}
+
+.lg {
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+}
