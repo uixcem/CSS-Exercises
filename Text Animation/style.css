@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #151719;
+    display: grid;
+    place-items: center;
+}
+
+
+
+
+.container {
+    width: fit-content;
+    margin-left: 20px;
+    font-family: 'Goblin One', cursive;
+    display: flex;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, rgba(0, 0, 0, .2));
+
+}
+
+p::first-letter {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    float: left;
+    border-radius: 13px;
+    box-shadow: 3px 3px 1px 1px rgb(0, 0, 0);
+    padding: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.cemkaplan {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+
+.cem {
+    width: 100px;
+    height: 100px;
+}
+
+.cem :hover {
+    transform: translateY(5px);
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover {
+    background: none;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul {
+    position: absolute;
+    width: 100px;
+    display: none;
+}
+
+li {
+    padding: 10px;
+}
+
+.lg:hover {
+    transform: scale(1.2);
+}
+
+.lg {
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+}
