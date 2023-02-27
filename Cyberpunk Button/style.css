@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(27, 20, 100);
+}
+
+.container {
+    width: 180px;
+    height: 62px;
+    display: flex;
+    place-items: center;
+    position: relative;
+    transition: 1s ease all;
+}
+
+
+
+button {
+    width: 166px;
+    height: 60px;
+    border: none;
+    padding: 25px 17px 25px 17px;
+    box-shadow: ;
+    display: flex;
+    align-items: center;
+    line-height: 18px;
+    background-color: #fff;
+    cursor: pointer;
+    font-family: "new-frank", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    box-shadow: 1px 0px 0px #ff00ff, 0px 1px 0px #ff00ff, 2px 1px 0px #ff00ff, 1px 2px 0px #ff00ff, 3px 2px 0px #ff00ff, 2px 3px 0px #ff00ff, 4px 3px 0px #ff00ff, 3px 4px 0px #ff00ff, 5px 4px 0px #ff00ff, 4px 5px 0px #ff00ff, 6px 5px 0px #ff00ff, 5px 6px 0px #ff00ff, 7px 6px 0px #ff00ff, 6px 7px 0px #ff00ff, 8px 7px 0px #ff00ff, 7px 8px 0px #ff00ff, 9px 8px 0px #ff00ff, 8px 9px 0px #ff00ff, -10px -10px 0px #60BFDE;
+    transition: all ease .7s;
+
+
+}
+
+button:hover {
+    transition: all 0.7s ease;
+    box-shadow: none;
+    outline: 3px solid black;
+    text-decoration: double;
+}
+
+.cemkaplan {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+
+.cem {
+    width: 100px;
+    height: 100px;
+}
+
+.cem :hover {
+    transform: translateY(5px);
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover {
+    background: none;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul {
+    position: absolute;
+    width: 100px;
+    display: none;
+}
+
+li {
+    padding: 10px;
+}
+
+.lg:hover {
+    transform: scale(1.2);
+}
+
+.lg {
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+}
