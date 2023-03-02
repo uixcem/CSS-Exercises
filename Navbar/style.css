@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: aliceblue;
+    display: grid;
+    place-items: center;
+}
+
+.navbar {
+    background-color: rgb(79, 83, 83);
+    width: 50%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: white;
+    position: relative;
+}
+
+a::before, a::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background: white;
+    transition: 1s;
+
+}
+
+a::after {
+    left: 0;
+    bottom: -10px;
+}
+
+a::before {
+    right: 0;
+    top: -10px;
+}
+
+a:hover::after, a:hover::before {
+    width: 100%;
+}
+
+.cemkaplan {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+
+.cem {
+    width: 100px;
+    height: 100px;
+}
+
+.cem :hover {
+    transform: translateY(5px);
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover {
+    background: none;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul {
+    position: absolute;
+    width: 100px;
+    display: none;
+}
+
+li {
+    padding: 10px;
+}
+
+.lg:hover {
+    transform: scale(1.2);
+}
+
+.lg {
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+}
