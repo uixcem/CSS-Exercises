@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(221, 221, 221);
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    display: flex;
+    place-content: center;
+    position: relative;
+}
+
+img {
+    width: 30%;
+}
+
+
+span {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lemonchiffon;
+    box-shadow:
+        0 0 60px 30px #fff,
+        0 0 100px 60px rgb(251, 251, 3),
+        0 0 140px 90px rgb(253, 237, 10);
+    position: absolute;
+    animation: glowing 3s ease infinite;
+    opacity: 0.0;
+    z-index: 3;
+    transition: ease all 0.5s;
+    right: 225px;
+    top: 20px;
+
+}
+
+.glow:hover span {
+    opacity: 1;
+}
+
+@keyframes glowing {
+
+    from {
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(0.8);
+    }
+
+    to {
+        transform: scale(0.5);
+    }
+
+}
+
+.cemkaplan {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+
+.cem {
+    width: 100px;
+    height: 100px;
+}
+
+.cem :hover {
+    transform: translateY(5px);
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover {
+    background: none;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul {
+    position: absolute;
+    width: 100px;
+    display: none;
+}
+
+li {
+    padding: 10px;
+}
+
+.lg:hover {
+    transform: scale(1.2);
+}
+
+.lg {
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+}
