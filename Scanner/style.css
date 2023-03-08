@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    display: grid;
+    place-items: center;
+}
+
+.card-body {
+    max-width: 50vw;
+    max-height: 50vh;
+    background: #232946;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.9px);
+    -webkit-backdrop-filter: blur(7.9px);
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+    color: #b8c1ec;
+    font-size: 1.5rem;
+}
+
+
+.scanner-v {
+    min-width: 100px;
+    min-height: 110%;
+    background-color: #eebbc34e;
+    border: #000 solid 1px;
+    position: absolute;
+    left: -50px;
+    animation: tripr ease 4s infinite;
+    transition: all ease 1s;
+}
+
+.scanner-h {
+    min-width: 110%;
+    height: 50px;
+    background-color: #b8c1ec71;
+    border: #000 solid 1px;
+    position: absolute;
+    top: -30px;
+    animation: tripc ease 4s infinite;
+    transition: all ease 1s;
+}
+
+
+@keyframes tripr {
+    from {
+        transform: translateX(-30px);
+    }
+
+    to {
+        transform: translateX(110vw);
+    }
+
+}
+
+@keyframes tripc {
+    from {
+        transform: translatey(-100px);
+    }
+
+    to {
+        transform: translatey(110vh);
+    }
+
+}
+
+.cemkaplan {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+
+.cem {
+    width: 100px;
+    height: 100px;
+}
+
+.cem :hover {
+    transform: translateY(5px);
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover {
+    background: none;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul {
+    position: absolute;
+    width: 100px;
+    display: none;
+}
+
+li {
+    padding: 10px;
+}
+
+.lg:hover {
+    transform: scale(1.2);
+}
+
+.lg {
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+}
