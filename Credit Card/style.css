@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to right, #4286f4, #5675be);
+
+}
+
+.card-body {
+    min-width: 400px;
+    height: 250px;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 1px 2px 10px 1px rgba(1, 1, 1, 2.3)
+}
+
+.shapes {
+    position: absolute;
+    min-width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #4286f412;
+    left: -120px;
+    bottom: -120px;
+}
+
+.chip {
+    min-width: 60px;
+    min-height: 50px;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom left, #ffecc7, #d0b978);
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+
+.horizontal {
+    position: absolute;
+    border: #0f2027 1px solid;
+    padding-top: 50px;
+}
+
+.a {
+    left: 29px;
+}
+
+.x {
+    width: 20px;
+    z-index: 2;
+    top: 12.5px;
+    left: 19px;
+    padding-top: 25px;
+    border: #0f2027 2px solid;
+    background-color: #203139;
+    border-radius: 5px;
+
+}
+
+
+.vertical {
+    position: absolute;
+    width: 100%;
+    border: #0f2027 1px solid;
+}
+
+.b {
+    top: 24px;
+}
+
+.c {
+    top: 16px;
+}
+
+.d {
+    bottom: 16px;
+}
+
+span {
+    color: azure;
+    -webkit-text-stroke: #757575 1px;
+}
+
+.number {
+    position: absolute;
+    bottom: 60px;
+    right: 30px;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.name {
+    bottom: 15px;
+    right: 30px;
+    position: absolute;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.date {
+    left: 50px;
+    bottom: 15px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.r {
+    background-color: #EB001B;
+    position: absolute;
+    right: 60px;
+}
+
+.l {
+    background-color: #f79f1bd3;
+}
+
+.bank img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 60px;
+    top: 20px;
+}
+
+.cemkaplan {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+
+.cem {
+    width: 100px;
+    height: 100px;
+}
+
+.cem :hover {
+    transform: translateY(5px);
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover {
+    background: none;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul {
+    position: absolute;
+    width: 100px;
+    display: none;
+}
+
+li {
+    padding: 10px;
+}
+
+.lg:hover {
+    transform: scale(1.2);
+}
+
+.lg {
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+}
