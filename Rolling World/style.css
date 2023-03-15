@@ -104,6 +104,27 @@ span.b {
     background-color: gold;
 }
 
+.marks {
+    width: .5vw;
+    height: 5vw;
+    background-color: gold;
+    position: fixed;
+}
+
+.z1 {
+    transform: rotate(125deg);
+    right: 36%;
+}
+
+.z2 {}
+
+
+/* Sun end */
+
+
+
+
+
 
 @keyframes rotato {
     from {
