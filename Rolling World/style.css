@@ -102,13 +102,16 @@ span.b {
     height: 15vw;
     border-radius: 50%;
     background-color: gold;
+    animation: shrink 10s infinite ease-in-out;
 }
 
-.marks {
+/* .marks {
     width: .5vw;
     height: 5vw;
     background-color: gold;
     position: fixed;
+    border-radius: 30%;
+    animation: shrink 10s infinite ease-in-out;
 }
 
 .z1 {
@@ -116,8 +119,60 @@ span.b {
     right: 36%;
 }
 
-.z2 {}
+.z2 {
+    transform: rotate(0deg);
+    right: 104%;
+    top: 30%;
+}
 
+.z3 {
+    transform: rotate(90deg);
+    right: 100%;
+}
+
+.z4 {
+    transform: rotate(0deg);
+    right: 27%;
+    top: 1.7%;
+}
+
+.z5 {
+    transform: rotate(0deg);
+    right: 27%;
+    top: 34.5%;
+}
+
+.z6 {
+    transform: rotate(90deg);
+    right: 37.5%;
+    top: 19%;
+}
+
+.z7 {
+    transform: rotate(90deg);
+    right: 17.1%;
+    top: 19%;
+}
+
+.z8 {
+    transform: rotate(135deg);
+    right: 20.5%;
+    top: 30%;
+} */
+
+@keyframes shrink {
+    from {
+        transform: scale(0.8);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    to {
+        transform: scale(0.8);
+    }
+}
 
 /* Sun end */
 
