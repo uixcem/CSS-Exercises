@@ -21,7 +21,8 @@ body {
     position: relative;
     background-color: aliceblue;
     border-radius: 50%;
-    animation: rotato infinite linear 30s;
+    animation: rotato infinite linear 200s;
+
 
 }
 
@@ -176,8 +177,238 @@ span.b {
 
 /* Sun end */
 
+/* Clouds */
+
+.clouds {
+    position: absolute;
+    top: 10%;
+    transition: all ease 3s;
+}
+
+.cloud {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+
+}
+
+.dfg {
+    animation: rlb infinite ease-in-out 10s;
+}
 
 
+
+.dfg1 {
+    right: 300%;
+    top: 45%;
+    background-color: whitesmoke;
+}
+
+.dfg2 {
+    right: 345%;
+    top: 15%;
+    background-color: whitesmoke;
+}
+
+.dfg3 {
+    right: 360%;
+    top: 45%;
+    background-color: whitesmoke;
+}
+
+.xcv1 {
+    left: 120%;
+    top: 45%;
+    background-color: whitesmoke;
+}
+
+.xcv2 {
+    left: 165%;
+    top: 15%;
+    background-color: whitesmoke;
+}
+
+.xcv3 {
+    left: 190%;
+    top: 45%;
+    background-color: whitesmoke;
+}
+
+.xcv {
+    animation: rlb infinite ease-in-out 10s;
+    top: 56%;
+    position: absolute;
+    animation-delay: 2s;
+    z-index: 1;
+
+}
+
+
+
+/* Clouds End */
+
+
+/* Trees */
+
+.tree {
+    position: absolute;
+}
+
+.tbody {
+    height: 4vw;
+    width: 1vw;
+    background-color: #966F33;
+
+}
+
+.tleaf {
+    width: 0;
+    height: 0;
+    border-left: 3vw solid transparent;
+    border-right: 3vw solid transparent;
+    border-bottom: 4vw solid #42692f;
+    bottom: 1%;
+    right: -3.5vw;
+}
+
+.group1 {
+    left: 50%;
+    top: -4%;
+}
+
+.group2 {
+
+    left: 75%;
+    top: 2.2%;
+    transform: rotate(25deg);
+}
+
+.group3 {
+    right: 100%;
+    top: 30%;
+    transform: rotate(-70deg);
+}
+
+.group4 {
+    right: 104%;
+    top: 50%;
+    transform: rotate(-90deg);
+}
+
+
+.group5 {
+    left: 38%;
+    top: 102.5%;
+    transform: rotate(195deg);
+}
+
+.group6 {
+    left: 62%;
+    top: 102.5%;
+    transform: rotate(175deg);
+}
+
+.group7 {
+    right: -4%;
+    top: 50%;
+    transform: rotate(90deg);
+}
+
+
+.group8 {
+    right: 5%;
+    top: 80%;
+    transform: rotate(125deg);
+}
+
+/* Trees End */
+
+.cemkaplan {
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+}
+
+.cem {
+    width: 10vw;
+    height: 10vw;
+}
+
+.cem :hover {
+    transform: translateY(5px);
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover {
+    background: none;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul {
+    position: absolute;
+    width: 100px;
+    display: none;
+}
+
+li {
+    padding: 10px;
+}
+
+.lg:hover {
+    transform: scale(1.2);
+}
+
+.lg {
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Animations */
+
+@keyframes rlb {
+    from {
+        transform: translatex(0);
+    }
+
+    50% {
+        transform: translatex(100px);
+    }
+
+    to {
+        transform: translatex(0px);
+    }
+
+}
 
 
 
