@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: blanchedalmond;
+}
+
+.container {
+
+    /* background-color: aliceblue; */
+    border-radius: 50%;
+    position: relative;
+    display: grid;
+    place-items: center;
+    transform-style: preserve-3d;
+    perspective: 100%;
+    transition: all ease 1s;
+    /* transform: rotate3d(1, 1, 1, 206deg); */
+
+}
+
+.container:hover {
+    transform: rotateX(-90deg);
+    transition: 1s ease all;
+}
+
+.container:active {
+    transform: rotateX(-180deg);
+    transition: 1s ease all;
+
+}
+
+.face {
+    width: 10vw;
+    height: 4vw;
+    background-color: brown;
+    position: absolute;
+    border-radius: 10px;
+    border: 0.1vw solid #121212;
+    font-family: "shrunken-head-bb", sans-serif;
+    font-weight: 400;
+    font-size: calc(16px + 1vw);
+
+}
+
+.a1 {
+    transform: translateZ(2vw);
+    background-color: rgb(208, 22, 124);
+}
+
+.a2 {
+    transform: translatez(-2vw) rotatex(-180deg);
+    background-color: rgb(164, 228, 13);
+}
+
+
+.a3 {
+    transform: rotateX(90deg) translatez(2vw);
+    background-color: rgb(136, 17, 255);
+}
+
+.cemkaplan {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+
+.cem {
+    width: 100px;
+    height: 100px;
+}
+
+.cem :hover {
+    transform: translateY(5px);
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover {
+    background: none;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul {
+    position: absolute;
+    width: 100px;
+    display: none;
+}
+
+li {
+    padding: 10px;
+}
+
+.lg:hover {
+    transform: scale(1.2);
+}
+
+.lg {
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+}
