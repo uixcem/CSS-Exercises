@@ -1,0 +1,230 @@
+@import url('https://fonts.cdnfonts.com/css/share-techmono-2');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to right, #d1913c, #ffd194);
+    overflow: hidden;
+}
+
+.container {
+    background-color: #f0ca9a;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 5vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 1vw solid #121212;
+    font-family: 'Share-TechMono', sans-serif;
+}
+
+.core {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    border: #121212 solid 0.05vw;
+    z-index: 2;
+    top: 46%;
+    left: 44%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    line-height: 100%;
+
+}
+
+.minute {
+    top: 51.5%;
+    width: 6vw;
+    height: .50vw;
+    background: linear-gradient(to right, #ffffff 75%, transparent 25%);
+    position: absolute;
+    border: 0.1vw solid white;
+    border-radius: 1vw;
+    left: 58%;
+    outline: #121212 solid 0.05vw;
+}
+
+.hour {
+    top: 27%;
+    width: 10vw;
+    height: .50vw;
+    background: linear-gradient(to right, #ffffff 75%, transparent 25%);
+    position: absolute;
+    border: 0.1vw solid white;
+    border-radius: 1vw;
+    left: 34%;
+    outline: #121212 solid 0.05vw;
+    transform: rotate(-90deg);
+
+}
+
+
+.second {
+    top: 68%;
+    width: 9vw;
+    height: .10vw;
+    background: linear-gradient(to right, #ffffff 75%, transparent 25%);
+    position: absolute;
+    border: 0.1vw solid tomato;
+    border-radius: 1vw;
+    left: 19%;
+    outline: tomato solid 0.05vw;
+    transform: rotate(135deg);
+
+}
+
+
+span {
+    position: absolute;
+    font-size: 1.5vw;
+
+}
+
+.a12 {
+    top: 1vw;
+    left: 48%;
+}
+
+.a01 {
+    top: 3vw;
+    right: 21%;
+}
+
+
+.a02 {
+    top: 9vw;
+    right: 15%;
+}
+
+
+.a03 {
+    top: 14.9vw;
+    right: 15%;
+}
+
+
+.a04 {
+    bottom: 7.5vw;
+    right: 15%;
+}
+
+
+.a05 {
+    bottom: 2vw;
+    right: 21%;
+}
+
+
+.a06 {
+    bottom: 1vw;
+    left: 48%;
+}
+
+
+.a07 {
+    bottom: 2vw;
+    left: 21%;
+}
+
+
+.a08 {
+    bottom: 7.5vw;
+    left: 15%;
+}
+
+.a09 {
+    top: 14.9vw;
+    left: 15%;
+}
+
+
+.a10 {
+    top: 9vw;
+    left: 15%;
+}
+
+
+.a11 {
+    top: 3vw;
+    left: 20%;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    span {
+        display: none;
+    }
+}
+
+.cemkaplan {
+    width: 8vw;
+    height: 8vw;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+.cem {
+    width: 8vw;
+    height: 8vw;
+}
+
+.cem :hover {
+    transform: translateY(10px);
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover {
+    background: none;
+}
+
+ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul li ul {
+    position: absolute;
+    width: 8vw;
+
+    display: none;
+}
+
+li {
+    padding: 0.5vw;
+}
+
+.lg:hover {
+    transform: scale(1.2);
+}
+
+.lg {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+}
