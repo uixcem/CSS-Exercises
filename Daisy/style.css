@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: cornflowerblue;
+    overflow: hidden;
+}
+
+.container {
+    width: 50vw;
+    height: 50vw;
+    border-radius: 50%;
+    background-color: blanchedalmond;
+    display: grid;
+    place-items: center;
+    position: relative;
+    outline: #121212 solid 1vw;
+}
+
+.core {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color: gold;
+    z-index: 5;
+    border: #121212 solid .01vw;
+
+}
+
+.leaf {
+    clip-path: ellipse(50% 50%);
+    background-color: white;
+    width: 2vw;
+    height: 7vw;
+    position: absolute;
+    box-shadow: 1vw 3vw 0vw #121212;
+    z-index: 4;
+
+}
+
+.a1 {
+    top: 26vw;
+}
+
+.a2 {
+    top: 26vw;
+    transform: rotate(15deg);
+    left: 23vw;
+
+}
+
+.a3 {
+    top: 25.5vw;
+    transform: rotate(30deg);
+    left: 22vw;
+}
+
+.a4 {
+    top: 25vw;
+    transform: rotate(45deg);
+    left: 21vw;
+}
+
+.a5 {
+    top: 24.5vw;
+    transform: rotate(60deg);
+    left: 20vw;
+}
+
+.a6 {
+    top: 23.5vw;
+    transform: rotate(70deg);
+    left: 19.5vw;
+}
+
+.a7 {
+    top: 22vw;
+    transform: rotate(80deg);
+    left: 19.5vw;
+}
+
+.a8 {
+    top: 21vw;
+    transform: rotate(95deg);
+    left: 19.5vw;
+}
+
+.a9 {
+    top: 20vw;
+    transform: rotate(105deg);
+    left: 19.5vw;
+}
+
+.a10 {
+    top: 19vw;
+    transform: rotate(120deg);
+    left: 20vw;
+}
+
+.a11 {
+    top: 18vw;
+    transform: rotate(135deg);
+    left: 21vw;
+}
+
+.a12 {
+    top: 17vw;
+    transform: rotate(150deg);
+    left: 22vw;
+}
+
+.a13 {
+    top: 16.5vw;
+    transform: rotate(160deg);
+    left: 23.3vw;
+}
+
+.a14 {
+    top: 16.5vw;
+    transform: rotate(180deg);
+    left: 24vw;
+}
+
+.a15 {
+    top: 16.5vw;
+    transform: rotate(195deg);
+    left: 25.3vw;
+}
+
+.a16 {
+    top: 17vw;
+    transform: rotate(205deg);
+    left: 26.5vw;
+}
+
+.a17 {
+    top: 17.5vw;
+    transform: rotate(220deg);
+    left: 27.5vw;
+}
+
+.a18 {
+    top: 18.5vw;
+    transform: rotate(233deg);
+    left: 28.5vw;
+}
+
+.a19 {
+    top: 19.5vw;
+    transform: rotate(250deg);
+    left: 29vw;
+}
+
+.a20 {
+    top: 21vw;
+    transform: rotate(265deg);
+    left: 29vw;
+}
+
+.a21 {
+    top: 22vw;
+    transform: rotate(280deg);
+    left: 29vw;
+}
+
+.a22 {
+    top: 23.5vw;
+    transform: rotate(285deg);
+    left: 28.5vw;
+}
+
+.a23 {
+    top: 24.5vw;
+    transform: rotate(300deg);
+    left: 28vw;
+}
+
+.a24 {
+    top: 25.5vw;
+    transform: rotate(315deg);
+    left: 27.5vw;
+}
+
+.a25 {
+    top: 26vw;
+    transform: rotate(330deg);
+    left: 26.7vw;
+}
+
+.a26 {
+    top: 26.1vw;
+    transform: rotate(350deg);
+    left: 26vw;
+}
+
+.a27 {
+    top: 26.1vw;
+    transform: rotate(355deg);
+    left: 25vw;
+}
+
+.body {
+    width: 1vw;
+    height: 25vw;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    background: linear-gradient(to top left, green 45%, rgb(27, 112, 27) 55%);
+
+
+
+}
+
+.leafs {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 1vw 5vw;
+    position: absolute;
+    z-index: 3;
+    border: #121212 solid .01vw;
+
+}
+
+.ax {
+    bottom: 12vw;
+    left: 22vw;
+    background: linear-gradient(to left bottom, green 45%, rgb(27, 112, 27) 55%);
+    animation: move infinite ease 5s;
+}
+
+.ax1 {
+    bottom: 5vw;
+    left: 25vw;
+    transform: rotate(90deg);
+    background: linear-gradient(to top right, green 45%, rgb(27, 112, 27) 55%);
+    animation: move1 infinite ease 5s;
+}
+
+@keyframes move {
+    from {
+        transform: rotate(0deg);
+    }
+
+    33% {
+        transform: rotatez(5deg);
+    }
+
+    66% {
+        transform: rotatez(-5deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes move1 {
+    from {
+        transform: rotate(90deg);
+    }
+
+    33% {
+        transform: rotatez(95deg);
+    }
+
+    66% {
+        transform: rotatez(85deg);
+    }
+
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+.cemkaplan {
+    width: 8vw;
+    height: 8vw;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+.cem {
+    width: 8vw;
+    height: 8vw;
+}
+
+.cem :hover {
+    transform: translateY(10px);
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover {
+    background: none;
+}
+
+ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul li ul {
+    position: absolute;
+    width: 8vw;
+
+    display: none;
+}
+
+li {
+    padding: 0.5vw;
+}
+
+.lg:hover {
+    transform: scale(1.2);
+}
+
+.lg {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+}
