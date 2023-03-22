@@ -120,6 +120,18 @@ body {
     position: absolute;
     border-radius: 6rem 6rem 0 0;
     transform: rotate(180deg);
+    animation: blinkin 3s ease infinite;
+    transition: ease all 2s;
+}
+
+@keyframes blinkin {
+    from {
+        height: .6vw;
+    }
+
+    to {
+        height: .01vw;
+    }
 }
 
 .eye.le {
@@ -147,15 +159,15 @@ body {
     height: .7vw;
     background-color: #602F70;
     position: absolute;
-    left: 1.95vw;
+    left: 1.96vw;
     top: 45%;
 }
 
 .curve {
     width: 2vw;
     height: 5vw;
-    border: solid .1vw #000;
-    border-color: transparent transparent #000 transparent;
+    border: solid .1vw #602F70;
+    border-color: transparent transparent #602F70 transparent;
     border-radius: 0 0 20vw 50%/35vw;
     position: absolute;
     left: 30vw;
