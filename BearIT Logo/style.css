@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/zb-zanutura');
 
 * {
     margin: 0;
@@ -10,16 +10,15 @@ body {
 
     width: 100vw;
     height: 100vh;
-    background-color: #4d42b8ba;
+    background-color: #4e42b85d;
     display: grid;
     place-items: center;
 
 }
 
 .container {
-    width: 25vw;
+    width: 32vw;
     height: 10vw;
-    background-color: #e6e6e6;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -57,7 +56,7 @@ body {
     background-color: #DD3695;
     border: 0.09vw solid #472668;
     bottom: .6vw;
-    left: .1vw;
+    left: .15vw;
     position: absolute;
 }
 
@@ -111,6 +110,7 @@ body {
     border-radius: 1vw;
     left: 1.5vw;
     bottom: .8vw;
+    z-index: 5;
 }
 
 .eye {
@@ -142,42 +142,119 @@ body {
     top: 1%;
 }
 
+.shape {
+    width: 0.1vw;
+    height: .7vw;
+    background-color: #602F70;
+    position: absolute;
+    left: 1.95vw;
+    top: 45%;
+}
 
+.curve {
+    width: 2vw;
+    height: 5vw;
+    border: solid .1vw #000;
+    border-color: transparent transparent #000 transparent;
+    border-radius: 0 0 20vw 50%/35vw;
+    position: absolute;
+    left: 30vw;
+}
 
+.lef {
+    left: -.7vw;
+    transform: rotate(20deg);
+    top: -540%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.rig {
+    left: .8vw;
+    transform: rotate(20deg);
+    top: -540%;
+}
 
 
 h1 {
     position: absolute;
-    right: 1vw;
+    right: 0vw;
+    font-family: 'ZB Zanutura', sans-serif;
+    font-size: 7vw;
+    font-weight: 600;
+    color: white;
+    top: 1vw;
+}
+
+span {
+    color: #DC3695;
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 300px) {
+
+    h1 {
+        display: none;
+    }
+
+    .frame {
+        left: 40%;
+    }
+}
+
+.cemkaplan {
+    width: 8vw;
+    height: 8vw;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+.cem {
+    width: 8vw;
+    height: 8vw;
+}
+
+.cem :hover {
+    transform: translateY(10px);
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover {
+    background: none;
+}
+
+ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul li ul {
+    position: absolute;
+    width: 8vw;
+
     display: none;
+}
+
+li {
+    padding: 0.5vw;
+}
+
+.lg:hover {
+    transform: scale(1.2);
+}
+
+.lg {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
 }
