@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f186;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.icon {
+    width: 10vw;
+    height: 10vw;
+    position: relative;
+    cursor: pointer;
+    background-color: rgb(44, 44, 44);
+    border-radius: 5vw;
+    display: grid;
+    place-items: center;
+
+}
+
+span {
+    width: 5vw;
+    height: .6vw;
+    border-radius: 1vw;
+    background-color: white;
+    position: absolute;
+    transition: all ease-out .3s;
+}
+
+span:nth-child(1) {
+    top: 3.5vw;
+}
+
+span:nth-child(2) {
+    top: 5.9vw;
+}
+
+.icon:hover SPAN:nth-child(1) {
+    top: 5vw;
+    transform: rotate(45deg);
+    transition: all ease-out .3s;
+    box-shadow: 0 0 0 0.1vw white;
+}
+
+.icon:hover SPAN:nth-child(2) {
+    top: 5vw;
+    transform: rotate(-45deg);
+    transition: all ease-out .3s;
+    box-shadow: 0 0 0 0.1vw white;
+}
+
+.icon:hover SPAN:nth-child(3) {
+    opacity: 0;
+    transition: all ease-out .3s;
+}
+
+.cemkaplan {
+    width: 8vw;
+    height: 8vw;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+.cem {
+    width: 8vw;
+    height: 8vw;
+}
+
+.cem :hover {
+    transform: translateY(10px);
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover {
+    background: none;
+}
+
+ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul li ul {
+    position: absolute;
+    width: 8vw;
+
+    display: none;
+}
+
+li {
+    padding: 0.5vw;
+}
+
+.lg:hover {
+    transform: scale(1.2);
+}
+
+.lg {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+}
