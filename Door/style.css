@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(121, 198, 192);
+    perspective: 100%;
+    transform-style: preserve-3d;
+    transform: rotate3d(1, 0, 0, 215deg);
+}
+
+.container {
+    width: 65vw;
+    height: 65vw;
+    background-color: azure;
+    position: relative;
+}
+
+.terrain {
+    -webkit-clip-path: polygon(69% 5%, 23% 13%, 10% 57%, 25% 83%, 74% 91%, 96% 71%, 94% 33%);
+    clip-path: polygon(69% 5%, 23% 13%, 10% 57%, 25% 83%, 74% 91%, 96% 71%, 94% 33%);
+    background-color: grey;
+    border-radius: 39vw;
+    width: 50vw;
+    height: 50vw;
+    transform: rotate3d(1, 0, 0, 95deg);
+    position: absolute;
+    bottom: 30vw;
+    left: 5vw;
+}
+
+.frame {
+    height: 50vw;
+    width: 25vw;
+    border-bottom: 1vw solid black;
+    border-left: 1vw solid black;
+    border-right: 1vw solid black;
+    position: absolute;
+    left: 20vw;
+    bottom: 5vw;
+    border-radius: .2vw;
+}
