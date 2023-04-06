@@ -12,27 +12,46 @@ body {
     background-color: rgb(121, 198, 192);
     perspective: 100%;
     transform-style: preserve-3d;
-    transform: rotate3d(1, 0, 0, 215deg);
+
 }
 
 .container {
     width: 65vw;
     height: 65vw;
-    background-color: azure;
+
     position: relative;
+    transform: rotate3d(1, 0, 0, 215deg);
+    transform-style: preserve-3d;
+    z-index: 1;
+}
+
+.door {
+    height: 49vw;
+    width: 23vw;
+    position: absolute;
+    left: 21vw;
+    bottom: 6vw;
+    background-color: blueviolet;
+    transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+    transform-origin: left bottom;
+    z-index: 4;
+
+
 }
 
 .terrain {
     -webkit-clip-path: polygon(69% 5%, 23% 13%, 10% 57%, 25% 83%, 74% 91%, 96% 71%, 94% 33%);
     clip-path: polygon(69% 5%, 23% 13%, 10% 57%, 25% 83%, 74% 91%, 96% 71%, 94% 33%);
-    background-color: grey;
+    background-color: rgba(156, 147, 147, 0);
     border-radius: 39vw;
     width: 50vw;
     height: 50vw;
-    transform: rotate3d(1, 0, 0, 95deg);
+    /* transform: rotate3d(1, 0, 0, 95deg); */
     position: absolute;
     bottom: 30vw;
     left: 5vw;
+    z-index: -2;
+
 }
 
 .frame {
@@ -45,4 +64,6 @@ body {
     left: 20vw;
     bottom: 5vw;
     border-radius: .2vw;
+    z-index: 3;
+
 }
