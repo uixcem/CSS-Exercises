@@ -1,0 +1,205 @@
+$black : #252425
+
+@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #f4f5f6;
+    display: grid;
+    place-items: center;
+    
+}
+   /* General Styles */
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.card-body{
+    min-width:  400px;
+    min-height: 800px;
+    background-color: #fdfefd;
+    border-radius: 5rem;
+    position: relative;
+}
+/* General Styles end */
+
+/* Card Adjustments-Top */
+.card-body-top{
+    background: linear-gradient(102.85deg, #FEE140 -1.36%, #F38F4E 34.41%, #d6114c 100%);
+    border-radius: 5rem 5rem 0 0;
+    position: absolute;
+    text-align: center; 
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+
+}
+
+.card-title h1 {
+    font-size: 4.5rem;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+}
+
+.card-text {
+   
+    width: 80%;
+    text-align: center;
+}
+
+.card-text h3 {
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: lighter;
+    opacity: .6;
+    letter-spacing: 1.5px;
+    padding-bottom: 3rem;
+}
+
+
+hr.top-line{
+    position: absolute;
+    top: 50%;
+    width: 80%;
+    height: 3px;
+    background-color: #fff;
+    border: none;
+}
+
+/* Card Adjustments-Top end */
+
+/* Card Adjustments-Middle */
+
+.card-body-middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    top: 30%;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    
+}
+
+
+span{
+    font-size: 12rem;
+    font-weight: 900;
+    font-family: 'Palanquin', sans-serif;
+}
+
+sub{
+    font-size: 2.5rem;
+    font-weight: regular;
+    letter-spacing: .1rem;
+    font-family: 'Palanquin', sans-serif;
+}
+
+sup{
+    font-size: 7rem;
+    font-weight: regular;
+    font-family: 'Palanquin', sans-serif;
+    vertical-align: top;
+    position: relative;
+}
+
+.mid-line{
+    width: 30%;
+}
+
+.mid-line hr{
+    position: absolute;
+    top: 48%;
+    width: 30%;
+    height: 3px;
+    background-color: #c3c3c3;
+    border: none;;
+}
+
+.feature-list{
+    list-style: none;
+    font-size: 1.5rem;
+    width: 100%;
+    opacity: .3;
+    font-weight:700;
+    letter-spacing: .9px;
+    padding-right:25px;
+    margin-top: 15%;
+    
+}
+
+.feature-list li{
+    margin-bottom: 2rem;
+    list-style: none;
+
+}
+
+li:nth-child(1):before  {
+    content: "🚀";
+    padding-right: 5px;
+  }
+
+li:nth-child(2):before  {
+    content: "⏰";
+    padding-right: 5px;
+  }
+
+li:nth-child(3):before  {
+    content: "💪";
+    padding-right: 5px;
+  }
+  
+/* Middle Adjustments end   */
+
+/* Bottom Part */
+
+.card-body-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 75%;
+    height: 25%;
+    width: 100%;
+    position: absolute;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    background: linear-gradient(102.85deg, #FEE140 -1.36%, #F38F4E 34.41%, #d6114c 100%);
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2rem;
+    border: none;
+}
+
+
+
+
+
+
+
+

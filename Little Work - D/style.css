@@ -53,7 +53,7 @@ body{
 .box:nth-child(even){
     background: #fff;
 }
-
+`
 :where(.a1,.a2,.a3,.a4){
     color: #DD3695;
 }
