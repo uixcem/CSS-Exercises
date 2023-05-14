@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #373B44;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: auto;
+    perspective: 100%;
+    transform-style: preserve-3d;
+    transform: rotate3d(2,0,2, 75deg );
+    
+}
+
+.chest{
+    width: 400px;
+    height: 400px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);}
+
+
+.box{
+    height: 50px;
+    width: 50px;
+    transform-style: preserve-3d;
+}
+
+
+.white{
+    background-color: #EBECD0;
+    border: .1px solid black;
+}
+
+.green{
+    background-color: #779556;
+    border: .1px solid black;
+} 
+
+
+
+
+.side {
+    position: absolute;
+    transform-style: preserve-3d;
+}
+
+
+.top {
+    width: 400px;
+    height: 400px;
+    background-color: brown;
+    transform:  translateZ(25px);
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 0;
+
+}
+
+.bottom {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(199, 122, 122);
+    transform: translateZ(-25px);}
+
+.a {
+    width: 400px;
+    height: 50px;
+    background-color: #46383c;
+    transform: rotateX(90deg) translateZ(200px);
+}
+
+.ax {
+    width: 400px;
+    height: 50px;
+    background-color: #46383c;
+    transform: rotateX(90deg) translateZ(-200px);
+}
+
+
+.b{
+    width: 50px;
+    height: 400px;
+    background-color: #fff;
+    transform: rotateY(90deg) translateZ(200px);
+}
+
+.bx{
+    width: 50px;
+    height: 400px;
+    background-color: #fff;
+    transform: rotateY(90deg) translateZ(-200px);
+}
+
+h1.title{
+    transform: rotateX(-90deg) translateZ(-100px);
+    font-size: 3rem;
+    color: #46383c;
+}
+
+h2.mark{
+    transform: rotatex(90deg)  rotatey(-90deg) translateZ(-200px);
+    font-size: 3rem;
+    color: #fff;
+}
+
+.cemkaplan {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+
+.cem {
+    width: 100px;
+    height: 100px;
+}
+
+.cem :hover {
+    transform: translateY(5px);
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover {
+    background: none;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul {
+    position: absolute;
+    width: 100px;
+    display: none;
+}
+
+li {
+    padding: 10px;
+}
+
+.lg:hover {
+    transform: scale(1.2);
+}
+
+.lg {
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+}
