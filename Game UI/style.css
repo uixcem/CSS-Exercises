@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFD275;
+    display: grid;
+    place-items: center;
+
+}
+
+.container{
+    border: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    width: 345px;
+    background: linear-gradient(0.11deg, #4481EB 0.12%, #04BEFE 99.93%);
+    border: 3px solid #FFFFFF;
+    box-shadow: 1px 7px 0px rgba(248, 248, 248, 0.25);
+    border-radius: 20px;
+    position: relative;
+    gap: 40px;
+}
+
+h1{
+font-family: 'Digitalt';
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 0px;
+color: #fff;
+-webkit-text-stroke: 1px solid #B8B8B8;
+}
+
+img{
+    width: 221.28px;
+    height: 167px; 
+}
+
+h2{
+font-family: 'Digitalt';
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 0px;
+color: #FFFFFF;
+}
+
+p{
+width: 264px;
+font-family: 'Mukta', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+color: #FFFFFF;
+}
+
+button{
+width: 217px;
+height: 56px;
+left: 0px;
+top: 0px;
+background: #FE6544;
+border: 3px solid #FFFFFF;
+box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+font-family: 'Digitalt';
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+color: #FFFFFF;
+cursor: pointer;
+display: grid;
+place-items: center;
+}
+
+button::before{
+content: "";
+position: absolute;
+width: 211px;
+height: 44px;
+left: 64px;
+top: 485px;
+background: #FE8744;
+border-radius: 7px;
+}
+
+button::after{
+content: "";
+position: absolute;
+left: 64px;
+top: 485px;
+clip-path: polygon(0 0, 0% 100%, 90% 100%, 50% 0 );
+width: 158.34px;
+height: 44px;
+background: #FEA844;
+opacity: 0.5;
+border-radius: 7px;
+}
+
+span{
+    position: absolute;
+    z-index: 1;
+    bottom: 67px;
+}
+
+
+.cemkaplan {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+
+.cem {
+    width: 100px;
+    height: 100px;
+}
+
+.cem :hover {
+    transform: translateY(5px);
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover {
+    background: none;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul {
+    position: absolute;
+    width: 100px;
+    display: none;
+}
+
+li {
+    padding: 10px;
+}
+
+.lg:hover {
+    transform: scale(1.2);
+}
+
+.lg {
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+}
