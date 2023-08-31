@@ -1,0 +1,14 @@
+{
+  "name": "css-exercises",
+  "version": "1.0.0",
+  "description": "CSS Exercises by uixcem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "uixcem",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
